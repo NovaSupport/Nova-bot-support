@@ -6,7 +6,7 @@ client.login(process.env.TOKEN);
 
 client.on("ready", () => {
   console.log("Le Bot est allumé !\n");
-  client.setActivity("Test jeu");
+  client.user.setActivity("Test jeu");
 }); 
 
 client.on("message", message => {
