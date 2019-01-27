@@ -6,6 +6,7 @@ client.login(process.env.TOKEN);
 client.on("ready", () => {
   console.log("Le Bot est allumé !");
   client.user.setActivity("Happy New years!🍾");
+  wait();
   client.user.setActivity("Happars!🍾");
 client.on("message", message => {
 
