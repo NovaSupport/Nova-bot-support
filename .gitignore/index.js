@@ -6,7 +6,7 @@ client.login(process.env.TOKEN);
 client.on("ready", () => {
   console.log("Le Bot est allumé !");
   client.user.setActivity("Happy New years!🍾");
-
+  client.user.setActivity("Happy New years!🍾");
 client.on("message", message => {
 
         if(message.content === "!ping") {
