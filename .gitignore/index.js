@@ -17,28 +17,7 @@ client.on("message", message => {
 
         if(message.content === "Bonjour, NovaSupport !") {
             if(message.channel.type === "dm") return message.channel.send("Vous ne devez pas éffectuer la commande ici...");
-            message.channel.send("Voici un exemple de fichier Markdown converti en embed 
-b[En cas de pépin, contactez le <\\DEV> du serveur.{
-https://cdn.discordapp.com/attachments/556875782442582057/556883758448377866/cadre_ghom_kroscolor.png
-}]b
-t[👉 Choix des rôles 👈]t
-
-**Bienvenue** dans la section des des roles, le discord est tres grand, donc pour garantir une lisibilité maximum et de la pertinence, nous avons mis en place un system de role qui te permet de ne voir que les salons que tu souhaite voir, pour les avoir, il te suffit de réagir avec l'emote corréspondante au role en dessous du message
-
-f[Rôles disponibles ↓{
-:Dofus: - **Dofus**
-:Fortnite: - **Fortnite**
-:CsGo: - **CSGO**
-:Overwatch: - **OverWatch**
-:Krosmaga: - **Krosmaga**
-:Otaku: - Fan d'**animes**
-:Twitch: - **Streameur** *(sur demande)*
-:Pgw: - Participants aux **conventions**
-:Esport: - Participants **e-sport**
-:manette: - Jeux **bots**
-🔞 - **NSFW**
-}]f
-Ce qui nous donne ↓");
+            message.channel.send("Voici");
             console.log("Un utilisateur (" + message.author.username +") à fait la commande " + message.content + ".")
         }
     
