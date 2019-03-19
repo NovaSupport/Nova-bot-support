@@ -33,7 +33,7 @@ client.on("message", message => {
            .addField("`!unmute`", "Autoriser une personne à parler.")
            .addField("`!kick`", "Expulser une personne du serveur.")
            .addField("`!ban`", "Bannir une personne du serveur.")
-            .setColor('RANDOM')
+            .setColor('#A01BEB')
             .setFooter("Bot NovaSuport - demandé par " + message.author.username)
             .setThumbnail(message.author.avatarURL);
             message.channel.send(aide_embed);
