@@ -29,7 +29,6 @@ client.on("message", message => {
            .addField("`Bonjour, NovaSupport !`", "Dis bonjour au bot.")
            .addField("`!autre`", "renvois 'autre'")
            .addField("`!help`", "Affiche le menu d'aide.")
-           .addField("`!joue`", "Fais jouer le bot à quelque chose.")
            .addField("`!mute`", "Interdire une personne de parler.")
            .addField("`!unmute`", "Autoriser une personne à parler.")
            .addField("`!kick`", "Expulser une personne du serveur.")
