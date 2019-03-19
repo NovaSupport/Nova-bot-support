@@ -39,16 +39,6 @@ client.on("message", message => {
             message.channel.send(aide_embed);
             console.log("Un utilisateur (" + message.author.username +") à fait la commande " + message.content + ".")  
         };
- 
-  client.on('message', async msg => {
-    if(msg.content.split(' ')[0] == '+help'){
-        let embed = new Discord.RichEmbed()
-            .setTitle("le menu d'aide du bot")
-            .addField('les catégories du bot', `utiles\nmodération\nfun`)
-            .setColor('#ff0000')
-        msg.channel.send(embed);
-    };
-});
   
         if(message.content.startsWith("!joue") || message.content === "!joue") {
           if(message.channel.type === "dm") return message.channel.send(mc);
