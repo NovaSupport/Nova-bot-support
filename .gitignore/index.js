@@ -27,18 +27,12 @@ if(message.content === "/partenariat") {
         if(message.channel.type === "dm") return message.channel.send("Vous ne devez pas éffectuer la commande ici...");
            let embed = new Discord.RichEmbed()
 .setColor('RANDOM')
-.setTitle('Staff')
-.addField("**Pour devenir partenaire, vous devez :**
-
-• 👥 • Serveur avec plus de **150** membre ; 
-
-• ⚡ • Serveur **actif** ;
-
-• 📖 • Serveur qui respecte les TOS de discord ;
-
-**• Les partenariats sont uniquement avec des serveurs discord maintenant •**   ", message.author.username)
-.setTimestamp()
-.setFooter("Test, message.author.displayAvatarURL")
+.setTitle('Conditions Partenariat')
+.addField("Pour devenir Partenaire vous devez :
+•:busts_in_silhouette:• Serveur avec plus de 160 membres!
+•:zap:• Serveur actif
+•:notebook_with_decorative_cover:• Serveur qui respecte les TOS de discord! ")
+.setFooter("Nova Bot, Moderator Bot")
 message.channel.send(embed)
 };
 
