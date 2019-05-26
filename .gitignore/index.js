@@ -18,7 +18,8 @@ let embed = new Discord.RichEmbed()
 .setTimestamp()
 .setFooter("Nova Bot, Moderator Bot")
 message.channel.send(embed)
-            
+                        message.channel.send(":robot: Pong ! :robot:");
+            console.log("Un utilisateur (" + message.author.username +") à fait la commande " + message.content + ".")
         }
 
         if(message.content === "Bonjour, NovaSupport !") {
