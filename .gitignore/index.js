@@ -9,7 +9,7 @@ client.on("ready", () => {
 
 client.on("message", message => {
 
-        if(message.content === "!absence") {
+        if(message.content === "/absence") {
         if(message.channel.type === "dm") return message.channel.send("Vous ne devez pas éffectuer la commande ici...");
 let embed = new Discord.RichEmbed()
 .setColor('RANDOM')
@@ -28,7 +28,7 @@ message.channel.send(embed)
             console.log("Un utilisateur (" + message.author.username +") à fait la commande " + message.content + ".")
         }
     
-        if(message.content === "!help") {
+        if(message.content === "/help") {
         if(message.channel.type === "dm") return message.channel.send("Vous ne devez pas éffectuer la commande ici...");
           var aide_embed = new Discord.RichEmbed()  
            .setTitle("Menu d'aide :") 
@@ -47,7 +47,7 @@ message.channel.send(embed)
             console.log("Un utilisateur (" + message.author.username +") à fait la commande " + message.content + ".")  
         };
   
-        if(message.content.startsWith("!joue") || message.content === "!joue") {
+        if(message.content.startsWith("/joue") || message.content === "/joue") {
           if(message.channel.type === "dm") return message.channel.send(mc);
           message.channel.bulkDelete("1");
           var args = message.content.split(' ').join(' ').slice(5);
@@ -56,7 +56,7 @@ message.channel.send(embed)
           console.log("Un utilisateur (" + message.author.username +") à fait la commande " + message.content + ".")
         }
 
-        if(message.content.startsWith("!kick") || message.content === "!kick"){
+        if(message.content.startsWith("/kick") || message.content === "/kick"){
           if(!message.guild.member(message.author).hasPermission("KICK_MEMBERS")) return message.channel.send("Vous n'avez pas la permission!");
           
           if(message.mentions.users.size === 0) return message.channel.send("Vous devez metionner un utilisaeur");
@@ -69,7 +69,7 @@ message.channel.send(embed)
                 });
             }
         
-            if(message.content.startsWith("!ban") || message.content === "!ban") {
+            if(message.content.startsWith("/ban") || message.content === "/ban") {
                 if(!message.guild.member(message.author).hasPermission("BAN_MEMBERS")) return message.channel.send("Vous n'avez pas la permission!");
         
                 if(message.mentions.users.size === 0) return message.channel.send("Vous devez mentionner un utilisateur");
@@ -81,7 +81,7 @@ message.channel.send(embed)
                     message.channel.send(`${member.user.username} a été ban par ${message.author.username} !`)
         ;})}
         
-            if(message.content.startsWith("!mute")|| message.content === "!mute") {
+            if(message.content.startsWith("/mute")|| message.content === "/mute") {
               if(!message.guild.member(message.author).hasPermission("KICK_MEMBERS")) return message.channel.send("Vous n'avez pas la permission !");
             
               if(message.mentions.users.size === 0) return message.channel.send('Vous devez mentionner un utilisateur !');
@@ -94,7 +94,7 @@ message.channel.send(embed)
               });
             }
             
-            if(message.content.startsWith("!unmute") || message.content === "!unmute") {
+            if(message.content.startsWith("/unmute") || message.content === "/unmute") {
                 if(!message.guild.member(message.author).hasPermission("KICK_MEMBERS")) return message.channel.send("Vous n'avez pas la permission !");
             
                 if(message.mentions.users.size === 0) return message.channel.send('Vous devez mentionner un utilisateur !');
