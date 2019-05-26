@@ -14,7 +14,7 @@ client.on("message", message => {
 let embed = new Discord.RichEmbed()
 .setColor('RANDOM')
 .setTitle('Absence')
-.addField("Absence procedure: De quand à quand ; Raison ; Votre Rank", message.author.username)
+.addField("Absence procedure: Quand commence votre absence et la durée |•| Raison |•| Votre Rank", message.author.username)
 .setTimestamp()
 .setFooter("Nova Bot, Moderator Bot")
 message.channel.send(embed)
