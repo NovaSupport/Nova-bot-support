@@ -28,10 +28,7 @@ if(message.content === "/partenariat") {
            let embed = new Discord.RichEmbed()
 .setColor('RANDOM')
 .setTitle('Conditions Partenariat')
-.addField("Pour devenir Partenaire vous devez :
-•:busts_in_silhouette:• Serveur avec plus de 160 membres!
-•:zap:• Serveur actif
-•:notebook_with_decorative_cover:• Serveur qui respecte les TOS de discord! ")
+.addField("Pour devenir Partenaire vous devez: •Serveur actif | •Serveur qui respecte les TOS de discord | •Serveur avec plus de 160 membres!")
 .setFooter("Nova Bot, Moderator Bot")
 message.channel.send(embed)
 };
