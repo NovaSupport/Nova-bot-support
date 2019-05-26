@@ -11,6 +11,13 @@ client.on("message", message => {
 
         if(message.content === "!ping") {
         if(message.channel.type === "dm") return message.channel.send("Vous ne devez pas éffectuer la commande ici...");
+let embed = new Discord.RichEmbed()
+.setColor('RANDOM')
+.setTitle('Test')
+.addField("Test pour xFirox", message.author.username)
+.setTimestamp()
+.setFooter("Test, message.author.displayAvatarURL")
+message.channel.send(embed)
             message.channel.send(":robot: Pong ! :robot:");
             console.log("Un utilisateur (" + message.author.username +") à fait la commande " + message.content + ".")
         }
