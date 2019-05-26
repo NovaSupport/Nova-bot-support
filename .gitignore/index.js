@@ -9,12 +9,12 @@ client.on("ready", () => {
 
 client.on("message", message => {
 
-        if(message.content === "!ping") {
+        if(message.content === "!absence") {
         if(message.channel.type === "dm") return message.channel.send("Vous ne devez pas éffectuer la commande ici...");
 let embed = new Discord.RichEmbed()
 .setColor('RANDOM')
-.setTitle('Test')
-.addField("Test pour xFirox", message.author.username)
+.setTitle('Absence')
+.addField("Absence procedure: De quand à quand ; Raison ; Votre Rank", message.author.username)
 .setTimestamp()
 .setFooter("Test, message.author.displayAvatarURL")
 message.channel.send(embed)
