@@ -28,7 +28,15 @@ if(message.content === "/partenariat") {
            let embed = new Discord.RichEmbed()
 .setColor('RANDOM')
 .setTitle('Staff')
-.addField("Test pour xFirox", message.author.username)
+.addField("**Pour devenir partenaire, vous devez :**
+
+• 👥 • Serveur avec plus de **150** membre ; 
+
+• ⚡ • Serveur **actif** ;
+
+• 📖 • Serveur qui respecte les TOS de discord ;
+
+**• Les partenariats sont uniquement avec des serveurs discord maintenant •**   ", message.author.username)
 .setTimestamp()
 .setFooter("Test, message.author.displayAvatarURL")
 message.channel.send(embed)
