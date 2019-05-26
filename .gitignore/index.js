@@ -16,7 +16,7 @@ let embed = new Discord.RichEmbed()
 .setTitle('Absence')
 .addField("Absence procedure: De quand à quand ; Raison ; Votre Rank", message.author.username)
 .setTimestamp()
-.setFooter("Test, message.author.displayAvatarURL")
+.setFooter("Nova Bot, Moderator Bot")
 message.channel.send(embed)
             message.channel.send(":robot: Pong ! :robot:");
             console.log("Un utilisateur (" + message.author.username +") à fait la commande " + message.content + ".")
