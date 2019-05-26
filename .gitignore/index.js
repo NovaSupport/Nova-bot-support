@@ -18,7 +18,30 @@ let embed = new Discord.RichEmbed()
 .setTimestamp()
 .setFooter("Nova Bot, Moderator Bot")
 message.channel.send(embed)
-                        message.channel.send(":robot: Pong ! :robot:");
+                        message.channel.send(":white_check_mark: Commande effectuée avec succès !");
+            console.log("Un utilisateur (" + message.author.username +") à fait la commande " + message.content + ".")
+        }
+
+client.on("message", message => {
+
+        if(message.content === "/partenariat") {
+        if(message.channel.type === "dm") return message.channel.send("Vous ne devez pas éffectuer la commande ici...");
+let embed = new Discord.RichEmbed()
+.setColor('RANDOM')
+.setTitle('Condition Partenariat')
+.addField('**Pour devenir partenaire, vous devez :**
+
+• 👥 • Serveur avec plus de **150** membre ; 
+
+• ⚡ • Serveur **actif** ;
+
+• 📖 • Serveur qui respecte les TOS de discord ;
+
+**• Les partenariats sont uniquement avec des serveurs discord maintenant •**  ", message.author.username)
+.setTimestamp()
+.setFooter("Nova Bot, Moderator Bot")
+message.channel.send(embed)
+                        message.channel.send(":white_check_mark: Commande effectuée avec succès !");
             console.log("Un utilisateur (" + message.author.username +") à fait la commande " + message.content + ".")
         }
 
