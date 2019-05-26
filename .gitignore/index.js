@@ -19,24 +19,6 @@ let embed = new Discord.RichEmbed()
 .setFooter("Nova Bot, Moderator Bot")
 message.channel.send(embed)
             
-if(message.content === "/partenariat") {
-        if(message.channel.type === "dm") return message.channel.send("Vous ne devez pas éffectuer la commande ici...");
-let embed = new Discord.RichEmbed()
-.setColor('RANDOM')
-.setTitle('Conditions Partenariat')
-.addField("**Pour devenir partenaire, vous devez :**
-
-• 👥 • Serveur avec plus de **150** membre ; 
-
-• ⚡ • Serveur **actif** ;
-
-• 📖 • Serveur qui respecte les TOS de discord ;
-
-**• Les partenariats sont uniquement avec des serveurs discord maintenant •**    ", message.author.username)
-.setTimestamp()
-.setFooter("Nova Bot, Moderator Bot")
-message.channel.send(embed)
-
         }
 
         if(message.content === "Bonjour, NovaSupport !") {
