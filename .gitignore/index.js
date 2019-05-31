@@ -22,7 +22,6 @@ message.channel.send(embed)
             console.log("Un utilisateur (" + message.author.username +") à fait la commande " + message.content + ".")
 
         }
-    ) { 
 
         if(message.content === "/help") {
         if(message.channel.type === "dm") return message.channel.send("Vous ne devez pas éffectuer la commande ici...");
