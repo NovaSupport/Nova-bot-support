@@ -9,12 +9,11 @@ client.on("ready", () => {
 
 client.on("message", message => {
 
-        if(message.content === "/absence") {
+        if(message.content === "/Bonjour, NovaSupport !") {
         if(message.channel.type === "dm") return message.channel.send("Vous ne devez pas éffectuer la commande ici...");
 let embed = new Discord.RichEmbed()
 .setColor('RANDOM')
-.setTitle('Absence')
-.addField("Absence procedure: Quand commence votre absence et la durée |•| Raison |•| Votre Rank", message.author.username)
+.addField("Bonjour! JE SAIS CODER CROTTE", message.author.username)
 .setTimestamp()
 .setFooter("Nova Bot, Moderator Bot")
 message.channel.send(embed)
