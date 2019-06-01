@@ -6,10 +6,10 @@ client.login(process.env.TOKEN);
 client.on("ready", () => {
   console.log("Le Bot est allumé !");
   client.user.setActivity("Nova Community Logs");
- 
-if(commande ===  "say") {
+
+if(commande ===  "/say") {
 let args = message.content.split(" ").slice(1);
-message.channel.send (`${args [0]`})
+message.channel.send (`${args[0]}`)
 }
  
 
