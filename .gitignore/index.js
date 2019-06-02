@@ -35,7 +35,7 @@ message.channel.send(embed)
            .addField("`Expulser une personne du serveur`", "/kick")
            .addField("`Bannir une personne du serveur`", "/ban")
             .setColor('#A01BEB')
-            .setFooter("Bot NovaSuport - demandé par " + message.author.username)
+            .setFooter("Bot Nova - demandé par " + message.author.username)
             .setThumbnail(message.author.avatarURL);
             message.channel.send(aide_embed);
             console.log("Un utilisateur (" + message.author.username +") à fait la commande " + message.content + ".")  
