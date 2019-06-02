@@ -7,19 +7,13 @@ client.on("ready", () => {
   console.log("Le Bot est allumé !");
   client.user.setActivity("Nova Community Logs");
 
-if(commande ===  "/say") {
-let args = message.content.split(" ").slice(1);
-message.channel.send (`${args[0]}`)
-}
- 
-
 client.on("message", message => {
 
         if(message.content === "/Bonjour, NovaSupport !") {
         if(message.channel.type === "dm") return message.channel.send("Vous ne devez pas éffectuer la commande ici...");
 let embed = new Discord.RichEmbed()
 .setColor('RANDOM')
-.addField("Bonjour! JE SAIS CODER CROTTE", message.author.username)
+.addField("Bonjour!", message.author.username)
 .setTimestamp()
 .setFooter("Nova Bot, Moderator Bot")
 message.channel.send(embed)
