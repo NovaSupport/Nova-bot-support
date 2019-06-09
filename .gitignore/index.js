@@ -7,6 +7,12 @@ client.on("ready", () => {
   console.log("Le Bot est allumé !");
   client.user.setActivity("Nova Community Logs");
 
+bot.on('message', msg=>{
+if(msg.content === "HELLO"){
+msg.reply('HELLO FRIEND');
+}
+})
+
 client.on("message", message => {
 
         if(message.content === "/Bonjour, NovaSupport !") {
