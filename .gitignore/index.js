@@ -4,7 +4,7 @@ client.login(process.env.TOKEN);
 
 client.on("ready", () => {
   console.log("Le Bot est allumé !");
-  client.user.setActivity("Nova Community Logs");
+  client.user.setActivity("Manage The Last Pub");
 
 client.on("message", message => {
 
