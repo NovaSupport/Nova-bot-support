@@ -21,12 +21,6 @@ message.channel.send(embed)
 
         }
 
-if(command === "say"){
-  let text = args.join(" ");
-  message.delete();
-  message.channel.send(text);
-}
-
         if(message.content === "/help") {
         if(message.channel.type === "dm") return message.channel.send("Vous ne devez pas éffectuer la commande ici...");
           var aide_embed = new Discord.RichEmbed()  
