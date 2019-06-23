@@ -13,7 +13,10 @@ if(!message.member.hasPermission("MANAGE_MESSAGES")) return message.reply("No");
 let botmessage = args.join(" ");
 message.delete().catch();
 message.channel.send(botmessage);
+}
 
+module.exports.help = {
+name: "say"
 }
 
 client.on("message", message => {
