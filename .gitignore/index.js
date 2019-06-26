@@ -34,8 +34,6 @@ message.channel.send(embed)
 
         }
 
-if (message.startsWith("say") == true) {//Check if the message send starts with "say" var newMessage = message.replace("say ", "");//Making a variable where "say " is removed bot.sendMessage({to: channelID, message:newMessage})//Send the new variable. }
-
         if(message.content === "/help") {
         if(message.channel.type === "dm") return message.channel.send("Vous ne devez pas éffectuer la commande ici...");
           var aide_embed = new Discord.RichEmbed()  
