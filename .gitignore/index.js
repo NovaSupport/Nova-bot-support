@@ -6,20 +6,6 @@ client.on("ready", () => {
   console.log("Le Bot est allumé !");
   client.user.setActivity("Manage The Last Pub");
 
-client.on("message", message => {
-
-        if(message.content === "/Bonjour, NovaSupport !") {
-        if(message.channel.type === "dm") return message.channel.send("Vous ne devez pas éffectuer la commande ici...");
-let embed = new Discord.RichEmbed()
-.setColor('RANDOM')
-.addField("Bonjour!", message.author.username)
-.setTimestamp()
-.setFooter("Nova Bot, Moderator Bot")
-message.channel.send(embed)
-                        message.channel.send(":white_check_mark: Commande effectuée avec succès !");
-            console.log("Un utilisateur (" + message.author.username +") à fait la commande " + message.content + ".")
-
-        }
 
         if(message.content === "/help") {
         if(message.channel.type === "dm") return message.channel.send("Vous ne devez pas éffectuer la commande ici...");
