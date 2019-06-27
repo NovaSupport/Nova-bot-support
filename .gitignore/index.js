@@ -26,8 +26,8 @@ client.on("ready", () => {
             console.log("Un utilisateur (" + message.author.username +") à fait la commande " + message.content + ".")  
         };
   
-   if(message.content.startWith("/say")) {
-        if(message.channel.type === "dm") return message.channel.send("Vous ne devez pas éffectuer la commande ici...");
+         if(message.content.startWith("/say")) {
+          if(message.channel.type === "dm") return message.channel.send(mc);
           message.channel.send("**"+message.author.username+" : **"+message.content);
             console.log("Un utilisateur (" + message.author.username +") à fait la commande " + message.content + ".")  
         };
