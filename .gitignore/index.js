@@ -26,12 +26,6 @@ client.on("ready", () => {
             console.log("Un utilisateur (" + message.author.username +") à fait la commande " + message.content + ".")  
         };
   
-         if(message.content.startWith("/say")) {
-          if(message.channel.type === "dm") return message.channel.send(mc);
-          message.channel.send("**"+message.author.username+" : **"+message.content);
-            console.log("Un utilisateur (" + message.author.username +") à fait la commande " + message.content + ".")  
-        };
-  
         if(message.content.startsWith("/joue") || message.content === "/joue") {
           if(message.channel.type === "dm") return message.channel.send(mc);
           message.channel.bulkDelete("1");
